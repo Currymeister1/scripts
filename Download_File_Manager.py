@@ -6,7 +6,7 @@ import shutil
 
 
 # Popular file types
-imageExtensions = ['jpeg','png','jpg']
+imageExtensions = ['jpeg','png','jpg','webp','svg']
 videoExtensions = ['mp4','mov', 'wmv', 'avi','gif']
 docsExtensions = ['doc','docx','odt','rtf','tex','txt','wpd']
 
