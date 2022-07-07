@@ -10,5 +10,19 @@ mypath = os.path.expanduser('~/Downloads')
 onlyfiles = [file for file in listdir(mypath) if isfile(join(mypath, file))]
 
 
+newFolders = ['Images', 'PDFs', 'Videos', 'Docs']
+
+# check if the new directories already exist
+for folders in newFolders:
+    newPath = mypath+'/'+folders
+    if(not os.path.exists(newPath)):
+        os.mkdir(newPath)
+    else:
+        print("%s already exists" % folders)
+
+
+
+
+
 # Print for testing
-print(onlyfiles)
+print(newFolders)
