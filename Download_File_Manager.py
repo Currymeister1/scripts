@@ -28,10 +28,8 @@ for folder in newFolders:
         print("%s already exists" % folder)
 
 
-# Moving the files
-for file in onlyfiles:
-    extensions = os.path.splitext(file)[1][1:]
-    currPath = mypath+'/'+file
+# Creating the destination path based on the file type
+def destPathCreator():
     destPath = ''
     if(extensions in imageExtensions):
         destPath = mypath+'/'+newFolders[0]
@@ -41,5 +39,15 @@ for file in onlyfiles:
         destPath = mypath+'/'+newFolders[2]
     if(extensions in docsExtensions):
         destPath = mypath+'/'+newFolders[3]
+    return destPath
+
+
+# Moving the files
+for file in onlyfiles:
+    extensions = os.path.splitext(file)[1][1:]
+    currPath = mypath+'/'+file
+    destPath = destPathCreator()
     if(not destPath == ''):
         shutil.move(currPath,destPath)
+
+
