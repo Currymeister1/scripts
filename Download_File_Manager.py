@@ -5,6 +5,9 @@ import os
 import shutil
 
 
+
+imageExtensions = ['jpeg','png','jpg']
+
 # Getting the path
 mypath = os.path.expanduser('~/Downloads')
 # Listing the files in the Download directory
@@ -25,9 +28,14 @@ for folders in newFolders:
 # Moving the files
 for file in onlyfiles:
     extensions = os.path.splitext(file)[1][1:]
+    currPath = mypath+'/'+file
     print(extensions)
     if(extensions == 'pdf'):
-        shutil.move(mypath+'/'+file,mypath+'/'+newFolders[1])
+        destPath = mypath+'/'+newFolders[1]
+        shutil.move(currPath,destPath)
+    if(extensions in imageExtensions):
+        destPath = mypath+'/'+newFolders[0]
+        shutil.move(currPath,destPath)
     
 
 
