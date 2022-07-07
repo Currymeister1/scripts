@@ -2,6 +2,7 @@
 from os import listdir
 from os.path import isfile, join
 import os
+import shutil
 
 
 # Getting the path
@@ -21,6 +22,13 @@ for folders in newFolders:
         print("%s already exists" % folders)
 
 
+# Moving the files
+for file in onlyfiles:
+    extensions = os.path.splitext(file)[1][1:]
+    print(extensions)
+    if(extensions == 'pdf'):
+        shutil.move(mypath+'/'+file,mypath+'/'+newFolders[1])
+    
 
 
 
