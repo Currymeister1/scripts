@@ -5,13 +5,14 @@ import os
 import shutil
 
 
-
+# Popular file types
 imageExtensions = ['jpeg','png','jpg']
 videoExtensions = ['mp4','mov', 'wmv', 'avi','gif']
 docsExtensions = ['doc','docx','odt','rtf','tex','txt','wpd']
 
 # Getting the path
 mypath = os.path.expanduser('~/Downloads')
+
 # Listing the files in the Download directory
 onlyfiles = [file for file in listdir(mypath) if isfile(join(mypath, file))]
 
@@ -40,9 +41,5 @@ for file in onlyfiles:
         destPath = mypath+'/'+newFolders[2]
     if(extensions in docsExtensions):
         destPath = mypath+'/'+newFolders[3]
-    shutil.move(currPath,destPath)
-
-
-
-# Print for testing
-print(newFolders)
+    if(not destPath == ''):
+        shutil.move(currPath,destPath)
