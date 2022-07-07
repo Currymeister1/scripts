@@ -1,6 +1,5 @@
 # Some Python Scripts
 
-## Reason
 Just trying out python and automating process to boost productivity ;)
 
 ## Download File Manager
