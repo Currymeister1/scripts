@@ -24,8 +24,7 @@ for folder in newFolders:
     newPath = mypath+'/'+folder
     if(not os.path.exists(newPath)):
         os.mkdir(newPath)
-    else:
-        print("%s already exists" % folder)
+    
 
 
 # Creating the destination path based on the file type
