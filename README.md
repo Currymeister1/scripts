@@ -10,3 +10,8 @@ Sorting the files in Download folder into different sub folders based on the fil
 4. Documents (doc, docx, odt, rtf, tex, txt, wpd)  
 
 For windows users: You need to change the myPath variable.
+
+
+
+## How To Automatically Run The Script
+You can use incrontab, which is available on most linux distors ([Arch Wiki](https://wiki.archlinux.org/title/Incron)). You will need **IN_CREATE** and **IN_MOVE_TO**  mask types 
