@@ -7,4 +7,6 @@ Sorting the files in Download folder into different sub folders based on the fil
 1. PDFs 
 2. Images (jpeg, png)
 3. Videos (mp4, mov, wmv, avi, gif)
-4. Documents (doc, docx, odt, rtf, tex, txt, wpd)
+4. Documents (doc, docx, odt, rtf, tex, txt, wpd)  
+
+For windows users: You need to change the myPath variable.
