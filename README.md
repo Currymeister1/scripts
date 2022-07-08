@@ -26,3 +26,6 @@ get a lot of images. The time is ticking and you have to convert these images in
 
 **Easy**: By using this awesome script. `python3 PNG_To_PDF -s image_1.jpg image_2.jpg .. image_n.jpg -o solutions.pdf`.    
 The -s flag sorts the images and -o flag is for naming the output file. By default the name of the outfile be result.pdf
+
+## Unzip Recursively
+A script, which can be useful in CTFs.  
