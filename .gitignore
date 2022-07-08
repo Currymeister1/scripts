@@ -1,2 +1,5 @@
 #ignore ALL .sh files
 *.sh
+
+#ignore ALL .pdf files
+*.pdf
