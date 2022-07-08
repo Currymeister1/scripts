@@ -3,3 +3,8 @@
 
 #ignore ALL .pdf files
 *.pdf
+
+#ignore ALL .jpeg, jpg, .png
+*.jpeg
+*.jpg
+*.png
