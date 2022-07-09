@@ -1,20 +1,36 @@
 from os import listdir
 import os
 from zipfile import ZipFile, is_zipfile
+import shutil
 
 # Current Directory
 mypath = '.'
 
 
-def extractor(path):
-    for file in listdir(path):
-        if(is_zipfile(file)):
-            print(file)
-            with ZipFile(file) as zipObj:
-                path = os.path.splitext(file)[0]
-                os.makedirs(path)
-                zipObj.extractall(path)
-                os.chdir(path)
-                extractor('.')
+from os import listdir
+import os
+from zipfile import ZipFile, is_zipfile
 
-extractor(mypath)
+# Current Directory
+mypath = os.getcwd()
+
+
+# Extraction happens here and a new folder is created
+def extractor(file):
+    with ZipFile(file) as zipObj:
+        print('Unzipping now: ', zipObj.filename)
+        path = os.path.splitext(file)[0]
+        zipObj.extractall(path)
+        caller(path)
+
+
+def caller(path):
+    for file in listdir(path):
+        complete_path = os.path.join(path,file)
+        if(is_zipfile(complete_path)):
+            extractor(complete_path)
+
+
+caller(mypath)
+
+
