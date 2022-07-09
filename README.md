@@ -21,8 +21,8 @@ Merging arbitary PDFs into a one single PDF. To use this script: `python3 Merge_
 **Note**: If a file is already using a same name as the output file, then you have to use a different name. 
 
 ## PNG To PDF
-**Imagine this**: You are doing an online exam and it's about to scan your solutions. You use windows in-built scanner programm and instead of getting PDF, you  
-get a lot of images. The time is ticking and you have to convert these images into a single PDF. How can you do this quickly?   
+**Imagine this**: You are doing an online exam and it's about time to scan your solutions. You use windows in-built scanner programm and instead of getting the PDF, you  
+got a lot of images. The time is ticking and you have to convert these images into a single PDF. How can you do this quickly?   
 
 **Easy**: By using this awesome script. `python3 PNG_To_PDF -s image_1.jpg image_2.jpg .. image_n.jpg -o solutions.pdf`.    
 The -s flag sorts the images and -o flag is for naming the output file. By default the name of the outfile will be result.pdf
