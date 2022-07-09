@@ -28,4 +28,4 @@ get a lot of images. The time is ticking and you have to convert these images in
 The -s flag sorts the images and -o flag is for naming the output file. By default the name of the outfile be result.pdf
 
 ## Unzip Recursively
-Recursively unzip files. The script and the zip folder must be in the same directory. If you want to remove the zip files after they are unzip, uncomment the line $\#24$. **Note:** You need to first copy the zip file into a different folder if you want to keep the copy of it.
+Recursively unzip files. The script and the zip folder must be in the same directory. If you want to remove the zip files after they are unzip, uncomment the line $24$.  **Note:** You need to first copy the zip file into a different folder if you want to keep the copy of it.
