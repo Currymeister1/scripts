@@ -21,6 +21,7 @@ def extractor(file):
         print('Unzipping now: ', zipObj.filename)
         path = os.path.splitext(file)[0]
         zipObj.extractall(path)
+        #os.remove(file)
         caller(path)
 
 
