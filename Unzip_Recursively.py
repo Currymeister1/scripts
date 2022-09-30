@@ -1,15 +1,6 @@
 from os import listdir
 import os
 from zipfile import ZipFile, is_zipfile
-import shutil
-
-# Current Directory
-mypath = '.'
-
-
-from os import listdir
-import os
-from zipfile import ZipFile, is_zipfile
 
 # Current Directory
 mypath = os.getcwd()

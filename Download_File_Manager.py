@@ -8,8 +8,8 @@ import shutil
 # Popular file types
 imageExtensions = ['jpeg','png','jpg','webp','svg']
 videoExtensions = ['mp4','mov', 'wmv', 'avi','gif']
-docsExtensions = ['doc','docx','odt','rtf','tex','txt','wpd']
-
+docsExtensions = ['odg','doc','docx','odt','rtf','tex','txt','wpd']
+archiveExtensions = ['zip', 'rar']
 # Getting the path
 mypath = os.path.expanduser('~/Downloads')
 
@@ -17,7 +17,7 @@ mypath = os.path.expanduser('~/Downloads')
 onlyfiles = [file for file in listdir(mypath) if isfile(join(mypath, file))]
 
 
-newFolders = ['Images', 'PDFs', 'Videos', 'Docs']
+newFolders = ['Images', 'PDFs', 'Videos', 'Docs','Archive']
 
 # check if the new directories already exist
 for folder in newFolders:
@@ -38,6 +38,8 @@ def destPathCreator():
         destPath = mypath+'/'+newFolders[2]
     if(extensions in docsExtensions):
         destPath = mypath+'/'+newFolders[3]
+    if(extensions in archiveExtensions):
+        destPath = mypath+'/'+newFolders[4]
     return destPath
 
 
