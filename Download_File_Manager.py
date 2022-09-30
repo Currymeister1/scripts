@@ -5,11 +5,12 @@ import os
 import shutil
 
 
-# Popular file types
+# Popular file types (add your desired file types here)
 imageExtensions = ['jpeg','png','jpg','webp','svg']
 videoExtensions = ['mp4','mov', 'wmv', 'avi','gif']
 docsExtensions = ['odg','doc','docx','odt','rtf','tex','txt','wpd']
 archiveExtensions = ['zip', 'rar']
+
 # Getting the path
 mypath = os.path.expanduser('~/Downloads')
 
@@ -17,6 +18,7 @@ mypath = os.path.expanduser('~/Downloads')
 onlyfiles = [file for file in listdir(mypath) if isfile(join(mypath, file))]
 
 
+# Folders to be created 
 newFolders = ['Images', 'PDFs', 'Videos', 'Docs','Archive']
 
 # check if the new directories already exist
