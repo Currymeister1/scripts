@@ -29,3 +29,6 @@ The -s flag sorts the images and -o flag is for naming the output file. By defau
 
 ## Unzip Recursively
 Recursively unzip files. The script and the zip folder must be in the same directory. If you want to remove the zip files after they are unzip, uncomment the line $24$.  **Note:** You need to first copy the zip file into a different folder if you want to keep the copy of it.
+
+## Email For Karen
+Write a dummy text with words to be replaced $REPLACE and provide a file containing words, which should be inserted in the dummy text seperated by ";". No need to re-write the same emails over and over again, Karen. You can write one and change the content easily. 
